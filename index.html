@@ -1,176 +1,194 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MaxGamingIR Shop</title>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&family=Fredoka:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    :root {
-      --purple: #a855f7;
-      --bg: #0e0e17;
-      --glass: rgba(255, 255, 255, 0.05);
-      --border: rgba(255, 255, 255, 0.1);
-      --radius: 20px;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaxGamingIR Shop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&family=Fredoka:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --purple: #a855f7;
+        --bg: #0e0e17;
+        --glass: rgba(255, 255, 255, 0.05);
+        --border: rgba(255, 255, 255, 0.1);
+        --radius: 20px;
+      }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Fredoka', 'Vazirmatn', sans-serif;
-      scroll-behavior: smooth;
-    }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Fredoka", "Vazirmatn", sans-serif;
+        scroll-behavior: smooth;
+      }
 
-    body {
-      background: linear-gradient(135deg, #1a1a2e, #0e0e17);
-      color: #fff;
-      padding: 2rem;
-    }
+      body {
+        background: linear-gradient(135deg, #1a1a2e, #0e0e17);
+        color: #fff;
+        padding: 2rem;
+      }
 
-    .window {
-      background: var(--glass);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      backdrop-filter: blur(16px);
-      box-shadow: 0 0 25px rgba(0,0,0,0.3);
-      overflow: hidden;
-    }
+      .window {
+        background: var(--glass);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        backdrop-filter: blur(16px);
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
 
-    .mac-header {
-      background: rgba(255,255,255,0.07);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.7rem 1rem;
-    }
+      .mac-header {
+        background: rgba(255, 255, 255, 0.07);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.7rem 1rem;
+      }
 
-    .mac-header .dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-    }
-    .red { background: #ff5f57; }
-    .yellow { background: #ffbd2e; }
-    .green { background: #28c840; }
+      .mac-header .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+      .red {
+        background: #ff5f57;
+      }
+      .yellow {
+        background: #ffbd2e;
+      }
+      .green {
+        background: #28c840;
+      }
 
-    section {
-      padding: 4rem 2rem;
-      margin: 2rem 0;
-    }
+      section {
+        padding: 4rem 2rem;
+        margin: 2rem 0;
+      }
 
-    h2 {
-      font-size: 2.2rem;
-      color: var(--purple);
-      text-align: center;
-      margin-bottom: 2rem;
-      text-shadow: 0 0 10px var(--purple);
-    }
+      h2 {
+        font-size: 2.2rem;
+        color: var(--purple);
+        text-align: center;
+        margin-bottom: 2rem;
+        text-shadow: 0 0 10px var(--purple);
+      }
 
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: center;
-      justify-content: center;
-      text-align: right;
-    }
+      .hero {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        text-align: right;
+      }
 
-    .hero img {
-      width: 180px;
-      animation: float 5s ease-in-out infinite;
-    }
+      .hero img {
+        width: 180px;
+        animation: float 5s ease-in-out infinite;
+      }
 
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-12px); }
-    }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-12px);
+        }
+      }
 
-    .hero-text {
-      max-width: 600px;
-      font-size: 1.2rem;
-      color: #ccc;
-    }
+      .hero-text {
+        max-width: 600px;
+        font-size: 1.2rem;
+        color: #ccc;
+      }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
 
-    .card {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 2rem;
-      text-align: center;
-      backdrop-filter: blur(10px);
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
+      .card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 2rem;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
 
-    .card:hover {
-      transform: translateY(-10px) scale(1.03) rotate(-1deg);
-      box-shadow: 0 8px 25px rgba(168, 85, 247, 0.6);
-    }
+      .card:hover {
+        transform: translateY(-10px) scale(1.03) rotate(-1deg);
+        box-shadow: 0 8px 25px rgba(168, 85, 247, 0.6);
+      }
 
-    .card i {
-      font-size: 2.5rem;
-      color: var(--purple);
-      margin-bottom: 1rem;
-    }
+      .card i {
+        font-size: 2.5rem;
+        color: var(--purple);
+        margin-bottom: 1rem;
+      }
 
-    .card h3 {
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-    }
+      .card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+      }
 
-    .card p {
-      font-size: 0.95rem;
-      color: #aaa;
-    }
+      .card p {
+        font-size: 0.95rem;
+        color: #aaa;
+      }
 
-    .price, .volume {
-      margin-top: 0.8rem;
-      font-weight: bold;
-      color: #fff;
-      font-size: 1rem;
-    }
+      .price,
+      .volume {
+        margin-top: 0.8rem;
+        font-weight: bold;
+        color: #fff;
+        font-size: 1rem;
+      }
 
-    .about {
-      text-align: center;
-      color: #bbb;
-      max-width: 800px;
-      margin: auto;
-      font-size: 1rem;
-    }
+      .about {
+        text-align: center;
+        color: #bbb;
+        max-width: 800px;
+        margin: auto;
+        font-size: 1rem;
+      }
 
-    .contact-btn {
-      margin-top: 2rem;
-      display: inline-block;
-      background: var(--purple);
-      padding: 0.8rem 1.8rem;
-      border-radius: 12px;
-      color: white;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: background 0.3s, transform 0.3s;
-    }
+      .contact-btn {
+        margin-top: 2rem;
+        display: inline-block;
+        background: var(--purple);
+        padding: 0.8rem 1.8rem;
+        border-radius: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background 0.3s, transform 0.3s;
+      }
 
-    .contact-btn:hover {
-      background: #9333ea;
-      transform: scale(1.05);
-    }
+      .contact-btn:hover {
+        background: #9333ea;
+        transform: scale(1.05);
+      }
 
-    footer {
-      text-align: center;
-      font-size: 0.85rem;
-      padding: 2rem 1rem;
-      color: #666;
-    }
+      footer {
+        text-align: center;
+        font-size: 0.85rem;
+        padding: 2rem 1rem;
+        color: #666;
+      }
 
-    #mich {
+      #mich {
         padding: 4rem 2rem;
         margin: 2rem;
         border-radius: var(--radius);
@@ -178,16 +196,16 @@
         border: 1px solid var(--border);
       }
 
-    @media (max-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr;
+      @media (max-width: 768px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .hero {
+          flex-direction: column;
+          text-align: center;
+        }
       }
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-  </style>
+    </style>
   </head>
   <body>
     <div class="window">
@@ -204,7 +222,7 @@
           alt="VPN Icon"
         />
         <div class="hero-text">
-          <h1>🧿 اشتراک‌های  مکس گیمینگ</h1>
+          <h1>🧿 اشتراک‌های مکس گیمینگ</h1>
           <p>
             دنیایی بدون محدودیت و با سرعت نور تجربه کن! با رفع تحریم مکس گیمینگ
             دنیای آنلاین همیشه در دسترسه.
@@ -248,10 +266,8 @@
           </div>
           <div class="card">
             <i class="fas fa-infinity"></i>
-             <h3>اشتراک دایمند</h3>
+            <h3>اشتراک دایمند</h3>
             <p>سرعت نور 🌍</p>
-            <div class="volume">حجم: نامحدود</div>
-            <div class="price">180,000 تومان</div>
 
             <div class="volume">حجم: نامحدود تک کاربر</div>
             <div class="price">180,000 تومان</div>
@@ -285,12 +301,9 @@
       <section id="mich">
         <h2>📜 درباره ما</h2>
         <div class="about">
-          تیم ما ساخته شده برای عبور از تحریم‌ها و محدودیت‌های اینترنت.
-          هدف ما، تجربه‌ای روونه، امن و بدون دردسره!<br />
-          <a
-            class="contact-btn"
-            href="https://t.me/SSVPN1945"
-            target="_blank"
+          تیم ما ساخته شده برای عبور از تحریم‌ها و محدودیت‌های اینترنت. هدف ما،
+          تجربه‌ای روونه، امن و بدون دردسره!<br />
+          <a class="contact-btn" href="https://t.me/SSVPN1945" target="_blank"
             >تماس با ما در تلگرام</a
           >
         </div>
